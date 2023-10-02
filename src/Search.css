@@ -1,0 +1,21 @@
+.Search {
+  margin: 0 auto;
+  vertical-align: middle;
+  padding: 30px 40px 20px;
+}
+
+.enter-city {
+  border-radius: 8px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn-success:focus {
+  border-color: #157347;
+}
+
+.btn:hover {
+  text-decoration: none;
+}

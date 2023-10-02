@@ -1,10 +1,17 @@
 import "./App.css";
+import Cities from "./Cities";
+import Search from "./Search";
+import CurrentWeather from "./CurrentWeather";
+import Forecast from "./Forecast";
 
 export default function App() {
   return (
     <div className="App">
       <div className="Weather mb-0">
-        <h1>Weather App</h1>
+        <Cities />
+        <Search />
+        <CurrentWeather />
+        <Forecast />
       </div>
       <footer className="footer-container">
         This project was coded by{" "}

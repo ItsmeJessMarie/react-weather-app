@@ -1,0 +1,16 @@
+.five-day {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 55px;
+}
+
+.full-forecast {
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0 0;
+  padding: 0 35px;
+}
+
+.emoji {
+  font-size: 35px;
+}
