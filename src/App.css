@@ -1,0 +1,18 @@
+.App .Weather {
+  font-family: "Rubik", sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/951/original/clouds.jpg?1694621900");
+  background-size: cover;
+  display: block;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 12px;
+  width: 750px;
+}
+
+.App .footer-container {
+  text-align: center;
+}
+
+.App .footer-container a:link {
+  text-decoration: none;
+}
