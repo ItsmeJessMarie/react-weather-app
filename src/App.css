@@ -1,6 +1,6 @@
 .App .Weather {
   font-family: "Rubik", sans-serif;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/951/original/clouds.jpg?1694621900");
+  background-image: url("../images/clouds.jpg");
   background-size: cover;
   display: block;
   margin: 80px auto;
