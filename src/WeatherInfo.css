@@ -1,17 +1,42 @@
+.WeatherInfo {
+  padding: 0 20px 0 30px;
+  vertical-align: middle;
+}
+
+.City {
+  font-weight: 700;
+  display: block;
+  margin: 20px 0 0 10px;
+  font-size: 48px;
+}
+
+.date-update {
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  margin: 8px 0 0 20px;
+  padding-left: 3px;
+}
+
+.current-date {
+  font-weight: 500;
+  font-size: 14px;
+}
+
 .current-icon {
   width: 85px;
   height: 85px;
   margin-left: 20px;
 }
 
-.temperature-now {
+.current-temperature {
   font-weight: 700;
   vertical-align: middle;
   font-size: 48px;
   margin: 5px 0 0 -4px;
 }
 
-.CurrentParameters {
+.WeatherParameters {
   text-align: center;
   margin-top: -8px;
 }
