@@ -8,18 +8,15 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-7">
           <div className="City">
-            <h1>{props.data.city}</h1>
+            <h1 className="city">{props.data.city}</h1>
           </div>
           <div className="DateUpdate">
             <span className="date-update">
-              Last updated:
-              <span className="current-date">
-                <FormattedDate date={props.data.date} />
-              </span>
+              <FormattedDate date={props.data.date} />
             </span>
           </div>
         </div>
-        <div className="col-5 mb-4">
+        <div className="col-5 mb-1">
           <div className="WeatherParameters">
             <span className="current-icon">{""}</span>
             <span className="current-temperature">
@@ -28,11 +25,10 @@ export default function WeatherInfo(props) {
             <span className="degree">°</span>
             <span className="fahrenheit">F</span>
             <h3 className="weather-description">{props.data.description}</h3>
-            <span className="wind-humidity-parameters">
-              Humidity: <span className="humidity">{props.data.humidity}</span>%
-              Wind:
-              <span className="wind"> {Math.round(props.data.wind)}</span> mph
-            </span>
+            <div className="wind-humidity-parameters space-between">
+              Humidity: {props.data.humidity}% Wind:{" "}
+              {Math.round(props.data.wind)} mph
+            </div>
           </div>
         </div>
       </div>
