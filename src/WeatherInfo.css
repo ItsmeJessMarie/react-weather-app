@@ -15,39 +15,36 @@
 
 .current-icon canvas {
   vertical-align: middle;
-  margin: -9px 0 -5px 45px;
+  margin: 0 8px 5px -25px;
 }
 
 .current-temperature {
   font-weight: 700;
   vertical-align: middle;
-  font-size: 50px;
-  margin: 0 4px 15px 10px;
+  font-size: 54px;
+  margin: 4px 0 0 0;
 }
 
 .WeatherParameters {
   text-align: center;
 }
 
-.degree {
+.unit {
   font-weight: 500;
-  float: right;
-  font-size: 20px;
-  margin: 10px 48px 0 -15px;
+  font-size: 14px;
+  position: absolute;
+  margin: 14px 0 0;
 }
 
-.fahrenheit {
-  font-weight: 500;
-  font-size: 12px;
-  float: right;
-  margin: 14px 0 0;
+.float-left {
+  display: inline-block;
 }
 
 .weather-description {
   font-weight: 700;
   font-size: 24px;
   text-transform: capitalize;
-  margin: -10px 0 -3px;
+  margin: -12px 0 -3px;
 }
 
 .wind-humidity-parameters {
