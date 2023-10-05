@@ -1,6 +1,6 @@
 .city {
   font-weight: 700;
-  margin: 32px 0 0 10px;
+  margin: 30px 0 0 10px;
   vertical-align: middle;
   font-size: 48px;
 }
@@ -13,43 +13,41 @@
   padding-left: 3px;
 }
 
-.current-icon {
-  width: 85px;
-  height: 85px;
-  margin-left: 10px;
+.current-icon canvas {
+  vertical-align: middle;
+  margin: -9px 0 -5px 45px;
 }
 
 .current-temperature {
   font-weight: 700;
   vertical-align: middle;
   font-size: 50px;
-  margin: 5px 0 0 -4px;
+  margin: 0 4px 15px 10px;
 }
 
 .WeatherParameters {
   text-align: center;
-  vertical-align: middle;
 }
 
 .degree {
   font-weight: 500;
   float: right;
   font-size: 20px;
-  margin: 22px 40px 0 -18px;
+  margin: 10px 48px 0 -15px;
 }
 
 .fahrenheit {
   font-weight: 500;
   font-size: 12px;
   float: right;
-  margin: 25px 3px 0 0;
+  margin: 14px 0 0;
 }
 
 .weather-description {
   font-weight: 700;
   font-size: 24px;
   text-transform: capitalize;
-  margin: -22px 0 -3px;
+  margin: -10px 0 -3px;
 }
 
 .wind-humidity-parameters {
