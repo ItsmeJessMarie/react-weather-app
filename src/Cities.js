@@ -1,5 +1,5 @@
 import React from "react";
-import "./Cities.css";
+import "./Weather.css";
 
 export default function Cities() {
   return (

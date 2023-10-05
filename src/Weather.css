@@ -1,3 +1,11 @@
+.Cities {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 10px;
+  color: blue;
+  font-size: 15px;
+}
+
 .Search {
   margin: 0 auto;
   vertical-align: middle;

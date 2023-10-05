@@ -1,5 +1,4 @@
 import "./App.css";
-import Cities from "./Cities";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
 
@@ -7,7 +6,6 @@ export default function App() {
   return (
     <div className="App">
       <div className="container mb-0">
-        <Cities />
         <Weather defaultCity="Milwaukee" />
         <Forecast />
       </div>
