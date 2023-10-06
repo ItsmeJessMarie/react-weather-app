@@ -22,6 +22,13 @@ export default function Weather(props) {
     });
   }
 
+  function searchCity(city) {
+    const apiKey = "62231151ce343c4d68652e1617efc22f";
+    const units = "metric";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   function search() {
     const apiKey = "62231151ce343c4d68652e1617efc22f";
     const units = "metric";
@@ -62,7 +69,7 @@ export default function Weather(props) {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault();
-                  search("Tokyo");
+                  searchCity("Tokyo");
                 }}
               >
                 Tokyo
@@ -73,7 +80,7 @@ export default function Weather(props) {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault();
-                  search("New York");
+                  searchCity("New York");
                 }}
               >
                 New York
@@ -84,7 +91,7 @@ export default function Weather(props) {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault();
-                  search("London");
+                  searchCity("London");
                 }}
               >
                 London
@@ -95,7 +102,7 @@ export default function Weather(props) {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault();
-                  search("Los Angeles");
+                  searchCity("Los Angeles");
                 }}
               >
                 Los Angeles
@@ -106,7 +113,7 @@ export default function Weather(props) {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault();
-                  search("Paris");
+                  searchCity("Paris");
                 }}
               >
                 Paris
@@ -117,7 +124,7 @@ export default function Weather(props) {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault();
-                  search("Chicago");
+                  searchCity("Chicago");
                 }}
               >
                 Chicago
@@ -126,7 +133,7 @@ export default function Weather(props) {
           </div>
         </div>
         <div className="Search">
-          <form onSubmit={() => handleSubmit(city)}>
+          <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-6">
                 <input
@@ -160,7 +167,7 @@ export default function Weather(props) {
       </>
     );
   } else {
-    search(city);
+    search();
     return "Loading...";
   }
 }
