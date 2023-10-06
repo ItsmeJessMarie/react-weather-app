@@ -127,7 +127,7 @@ export default function Weather(props) {
           </div>
         </div>
         <div className="Search">
-          <form onSubmit={() => handleSubmit()}>
+          <form onSubmit={() => handleSubmit(city)}>
             <div className="row">
               <div className="col-6">
                 <input
