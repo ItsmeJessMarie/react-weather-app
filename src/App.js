@@ -1,13 +1,11 @@
 import "./App.css";
 import Weather from "./Weather";
-import Forecast from "./Forecast";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container mb-0">
         <Weather defaultCity="Milwaukee" />
-        <Forecast />
       </div>
       <footer className="footer-container">
         This project was coded by{" "}
@@ -27,6 +25,15 @@ export default function App() {
           className="git-hub-link"
         >
           open-sourced on Github
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://jb-react-weather-app.netlify.app/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="netlify-link"
+        >
+          hosted on Netlify
         </a>
       </footer>
     </div>

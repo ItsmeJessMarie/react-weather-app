@@ -2,14 +2,14 @@
   font-weight: 700;
   margin: 34px 0 0 10px;
   vertical-align: middle;
-  font-size: 48px;
+  font-size: 50px;
 }
 
 .date-update {
   font-weight: 500;
   font-size: 13px;
   display: block;
-  margin: 0 0 0 10px;
+  margin: 5px 0 0 10px;
   padding-left: 3px;
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -23,25 +24,22 @@ export default function Weather(props) {
   }
 
   function searchCity(city) {
-    const apiKey = "62231151ce343c4d68652e1617efc22f";
-    const units = "metric";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    const apiKey = "5293d8454b519c30f6f6331f38c85b4c";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   function search() {
-    const apiKey = "62231151ce343c4d68652e1617efc22f";
-    const units = "metric";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    const apiKey = "5293d8454b519c30f6f6331f38c85b4c";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   function searchLocation(position) {
-    const apiKey = "62231151ce343c4d68652e1617efc22f";
-    const units = "metric";
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+    const apiKey = "5293d8454b519c30f6f6331f38c85b4c";
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -102,6 +100,17 @@ export default function Weather(props) {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault();
+                  searchCity("Chicago");
+                }}
+              >
+                Chicago
+              </a>
+            </div>
+            <div className="col">
+              <a
+                href="/"
+                onClick={(event) => {
+                  event.preventDefault();
                   searchCity("Los Angeles");
                 }}
               >
@@ -117,17 +126,6 @@ export default function Weather(props) {
                 }}
               >
                 Paris
-              </a>
-            </div>
-            <div className="col">
-              <a
-                href="/"
-                onClick={(event) => {
-                  event.preventDefault();
-                  searchCity("Chicago");
-                }}
-              >
-                Chicago
               </a>
             </div>
           </div>
@@ -163,6 +161,7 @@ export default function Weather(props) {
             </div>
           </form>
           <WeatherInfo data={weatherData} />
+          <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </>
     );
