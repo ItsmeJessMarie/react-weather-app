@@ -1,6 +1,6 @@
 .city {
   font-weight: 700;
-  margin: 34px 0 0 10px;
+  margin: 30px 0 0 10px;
   vertical-align: middle;
   font-size: 50px;
 }
@@ -55,8 +55,7 @@
 
 @media (max-width: 768px) {
   .city {
-    font-size: 44px;
-    margin: 24px 0 0 10px;
+    font-size: 40px;
   }
 
   .date-update {
@@ -65,7 +64,7 @@
   }
 
   .current-temperature {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .weather-description {
@@ -94,14 +93,6 @@
     margin: 0 auto;
     width: 350px;
     text-align: center;
-  }
-
-  .city {
-    font-size: 44px;
-  }
-
-  .current-temperature {
-    font-size: 44px;
   }
 
   .weather-description {
