@@ -21,3 +21,27 @@
 .App a:link {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .App .container {
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .App .footer-container {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .App .container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 350px;
+  }
+
+  .App .footer-container {
+    width: 350px;
+    margin: 0 auto;
+  }
+}

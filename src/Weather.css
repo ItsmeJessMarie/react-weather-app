@@ -1,7 +1,6 @@
 .Cities {
   text-align: center;
   margin: 0 auto;
-  padding: 0 10px;
   color: blue;
   font-size: 15px;
 }
@@ -16,6 +15,11 @@
   border-radius: 8px;
 }
 
+form .enter-city,
+form .btn {
+  font-size: 16px;
+}
+
 .btn {
   text-align: center;
 }
@@ -26,4 +30,61 @@
 
 .btn:hover {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .Cities {
+    font-size: 14px;
+  }
+  .Search {
+    padding: 18px 10px 0;
+  }
+
+  form .row {
+    padding: 0 5px;
+  }
+
+  form .col-6,
+  form .col-3 {
+    padding: 0 5px;
+  }
+
+  form .enter-city {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  form .btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Cities {
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+
+  .Cities .col {
+    padding: 0 5px;
+  }
+
+  form .row {
+    display: block;
+    margin: 0 auto;
+  }
+
+  form .col-6,
+  form .col-3 {
+    width: 100%;
+  }
+
+  form .enter-city {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  form .btn {
+    font-size: 13px;
+  }
 }

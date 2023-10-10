@@ -52,3 +52,68 @@
   font-weight: 500;
   padding-top: 4px;
 }
+
+@media (max-width: 768px) {
+  .city {
+    font-size: 44px;
+    margin: 24px 0 0 10px;
+  }
+
+  .date-update {
+    font-size: 12px;
+    margin: 2px 0 0 8px;
+  }
+
+  .current-temperature {
+    font-size: 40px;
+  }
+
+  .weather-description {
+    font-size: 20px;
+    margin: -6px 0 -3px;
+  }
+
+  .wind-humidity-parameters {
+    font-size: 12px;
+  }
+
+  .unit {
+    margin: 9px 0 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .WeatherInfo .row {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .WeatherInfo .col-7,
+  .WeatherInfo .col-5 {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+  }
+
+  .city {
+    font-size: 44px;
+  }
+
+  .current-temperature {
+    font-size: 44px;
+  }
+
+  .weather-description {
+    font-size: 20px;
+    margin: -5px 0 -3px;
+  }
+
+  .wind-humidity-parameters {
+    font-size: 12px;
+  }
+
+  .unit {
+    margin: 9px 0 0 0;
+  }
+}
