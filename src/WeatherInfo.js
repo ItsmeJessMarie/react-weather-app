@@ -26,7 +26,11 @@ export default function WeatherInfo(props) {
               </span>
             </div>
             <div className="float-left">
-              <WeatherTemperature celsius={props.data.temperature} />
+              <WeatherTemperature
+                unit={props.unit}
+                setUnit={props.setUnit}
+                celsius={props.data.temperature}
+              />
             </div>
             <h3 className="weather-description">{props.data.description}</h3>
             <div className="wind-humidity-parameters space-between">

@@ -1,25 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import "./WeatherInfo";
 import "./App";
 
 export default function WeatherTemperature(props) {
-  const [unit, setUnit] = useState("fahrenheit");
-
   function showFahrenheit(event) {
     event.preventDefault();
-    setUnit("fahrenheit");
+    props.setUnit("fahrenheit");
   }
 
   function showCelsius(event) {
     event.preventDefault();
-    setUnit("celsius");
+    props.setUnit("celsius");
   }
 
   function fahrenheit() {
     return (props.celsius * 9) / 5 + 32;
   }
 
-  if (unit === "fahrenheit") {
+  if (props.unit === "fahrenheit") {
     return (
       <div className="WeatherTemperature">
         <span className="current-temperature">{Math.round(fahrenheit())}</span>
