@@ -10,12 +10,12 @@ export default function App() {
       <footer className="footer-container">
         This project was coded by{" "}
         <a
-          href="https://www.shecodes.io/graduates/77936-jessica-boll"
+          href="https://www.shecodes.io/graduates/77936-jessica-farnan"
           target="_blank"
           rel="noreferrer noopener"
           className="shecodes-profile-link"
         >
-          Jessica Boll
+          Jessica Farnan
         </a>{" "}
         and is{" "}
         <a
